@@ -3,9 +3,9 @@ from sklearn.preprocessing import StandardScaler
 import numpy as np
 import os
 np.random.seed(100)
-D = 40
-M = 10000
-file_name = 'example1_D40_M10000'
+D = 1
+M = 200
+file_name = 'example1_D1_M200'
 dir_path = os.path.join('data', file_name)
 if not os.path.exists(dir_path):
     os.makedirs(dir_path)

@@ -4,8 +4,8 @@ import matplotlib.pyplot as plt
 import tensorflow as tf
 
 # 读取 CSV 文件
-X_bias = np.load('data/example1_D1_M10000/X_bias.npy')
-f_star = np.load('data/example1_D1_M10000/f_star.npy')
+X_bias = np.load('data/example1_D1_M200/X_bias.npy')
+f_star = np.load('data/example1_D1_M200/f_star.npy')
 X = X_bias[:, 0]
 
 # 读取模型

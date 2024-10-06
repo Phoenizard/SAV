@@ -12,13 +12,13 @@ def relative_error(y_true, y_pred):
 
 m = 50
 D = 1
-
+M = 200
 # 创建模型
 model = Model(m, D)
-model.load_state_dict(torch.load('save/SGD_D1_10000_1_torch.pth'))
+model.load_state_dict(torch.load(f'save/Ref_SAV_D1_200_lr10_50_torch.pth'))
 
-X_bias = torch.from_numpy(np.load('data/example1_D1_M10000/X_bias.npy')).float()
-f_star = torch.from_numpy(np.load('data/example1_D1_M10000/f_star.npy')).float().reshape(-1, 1)
+X_bias = torch.from_numpy(np.load(f'data/example1_D1_M{M}/X_bias.npy')).float()
+f_star = torch.from_numpy(np.load(f'data/example1_D1_M{M}/f_star.npy')).float().reshape(-1, 1)
 X = X_bias[:, 0]
 pred = model(X_bias)
 

@@ -17,7 +17,7 @@ class Model(nn.Module):
         self.tanh = torch.nn.Tanh()
         self.linear2 = torch.nn.Linear(m, 1, bias=False)
         self.div = DivideByConstantLayer(m)
-        self.hidden = nn.Linear(m, m)
+        self.hidden = nn.Linear(m, m, bias=False)
         # 初始化
         self.init_weights()
 

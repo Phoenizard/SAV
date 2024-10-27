@@ -22,7 +22,7 @@ model = Model(m, D)
 #=======================Configure Training=========================
 batch_size = 64
 learning_rate = 0.2
-optimizer = torch.optim.SGD(model.parameters(), lr=learning_rate, weight_decay=1e-4)
+optimizer = torch.optim.SGD(model.parameters(), lr=learning_rate)
 # optimizer = torch.optim.Adam(model.parameters())
 loss_fn = torch.nn.MSELoss(reduction='mean')
 train_dataset = TensorDataset(X_train, y_train)

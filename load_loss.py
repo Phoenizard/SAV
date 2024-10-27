@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 import json
 
 # 加载训练历史
-with open('save/SAV_D1_200_lr10_50_torch_history.json', 'r') as f:
+with open('save/SAV_D40_10000_lr02_1000_torch_PaperData_history.json', 'r') as f:
     history_dict = json.load(f)
 
 # 绘制训练和验证损失曲线

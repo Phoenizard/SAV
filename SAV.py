@@ -21,7 +21,7 @@ m = 1000
 model = Model(m, D)
 #=======================Configure Training=========================
 C = 1
-_lambda = 0
+_lambda = 0.1
 batch_size = 64
 learning_rate = 0.2
 loss_fn = torch.nn.MSELoss(reduction='mean')
